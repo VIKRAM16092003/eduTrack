@@ -1,0 +1,38 @@
+/* .nav-container h3{
+   text-transform: uppercase;
+   font-family:fantasy;
+   text-align:left;
+   text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+   color: black;
+}
+.nav-container{
+    background-color:#eee;
+    padding-top: 10px;
+    
+
+}
+.h
+{
+    background-color: grey;
+    margin-right: 90.5%;
+    margin-left: 8px;
+    padding-left: 9px;
+    border-radius: 5px;
+   text-align:left;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.8) ;
+} */
+
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container
+{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #ced8ff;
+}

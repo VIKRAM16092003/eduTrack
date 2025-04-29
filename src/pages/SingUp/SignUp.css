@@ -1,0 +1,45 @@
+.addUser
+{
+    margin:50px auto;
+    width:25%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
+}
+.addUserForm .inputGroup
+{
+   display: flex;
+   width:100%;
+   flex-direction: column;
+}
+.addUserForm .inputGroup label
+{
+    margin-top: 10px;
+}
+.addUserForm .inputGroup input
+{
+    margin-top: 5px;
+}
+.inputGroup button{
+    margin-top: 10px;
+}
+.login
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login .btn.btn-primary
+{
+   width: 50%;
+}
+
+.signup-text
+{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(8, 74, 8);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
