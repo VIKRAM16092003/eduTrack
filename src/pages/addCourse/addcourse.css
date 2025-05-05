@@ -1,0 +1,146 @@
+.add-course-container {
+    height: 631px; /* or any height */
+    overflow-y: scroll; /* forces scrollbar */
+    border: 1px solid #ccc; /* optional: to visualize the container */
+   
+  }
+  .container
+  {
+    margin:50px auto;
+    width:25%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
+  }
+
+  .createcourse .inputGroup
+  {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+  }
+
+  .createcourse .inputGroup label
+  {
+    margin-top: 10px;
+  }
+  .createcourse .inputGroup input
+  {
+    margin-top: 5px;
+  }
+  
+  .inputGroup button
+  {
+    margin-top: 10px;
+  }
+
+  .adduser
+{
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+
+.btn btn-primary
+{
+    box-shadow: 5cm;
+}
+
+.text1
+{
+    color: blue;
+}
+
+.add-course-container {
+  height: 631px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Central container for the form */
+.container {
+  margin: 50px auto;
+  width: 25%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Flex input fields */
+.createcourse .inputGroup {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Labels */
+.createcourse .inputGroup label {
+  margin-top: 10px;
+}
+
+/* Inputs */
+.createcourse .inputGroup input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.inputGroup button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputGroup button:hover {
+  background-color: #0056b3;
+}
+
+/* Add User heading */
+.adduser {
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Text color */
+.text1 {
+  color: blue;
+}
+
+/* Corrected button class selector */
+.btn.btn-primary {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔽 Responsive Media Query for Mobile */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .createcourse .inputGroup {
+    flex-direction: column;
+  }
+
+  .add-course-container {
+    height: auto;
+    overflow-y: auto;
+  }
+}

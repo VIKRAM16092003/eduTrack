@@ -1,0 +1,89 @@
+/* General layout */
+.min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  /* Title Styling */
+  .text-3xl {
+    font-size: 2rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-gray-800 {
+    color: #2d3748;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Description Styling */
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .text-gray-600 {
+    color: #4a5568;
+  }
+  
+  /* Video Card Styling */
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .border {
+    border: 1px solid #e2e8f0;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hover\:shadow-md:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0
+  }
+  .watch-video-button {
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    background-color: #2563eb; /* blue-600 */
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+  }
+  
+  .watch-video-button:hover {
+    background-color: #1e40af; /* blue-700 */
+  }
+  
+  #create
+  {
+    margin-top: 25px;
+    align-items: center;
+  }
+  .create{
+    text-align: center;
+    
+    padding-bottom: 8px;
+  }

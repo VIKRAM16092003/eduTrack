@@ -1,0 +1,72 @@
+/* avcourse.css */
+
+/* Container for the courses */
+.courses-container {
+    padding: 24px;
+    background-color: #f9fafb;
+    text-align: center;
+    min-height: 100vh;  /* Ensures the container takes at least the full height of the page */
+  }
+  
+  /* Heading Style */
+  .home-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 32px;
+  }
+  
+  /* Grid for displaying courses in card format */
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+    /* Allow scrolling on the page without restricting grid height */
+    overflow-y: auto;
+  }
+  
+  /* Card style for each course */
+  .course-card {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Hover effects for course cards */
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Style */
+  .course-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+  }
+  
+  /* Description Style */
+  .course-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 12px;
+  }
+  
+  /* Category Style */
+  .course-category {
+    font-size: 0.875rem;
+    color: #4299e1;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  

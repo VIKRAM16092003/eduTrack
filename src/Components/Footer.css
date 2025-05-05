@@ -1,0 +1,36 @@
+/* Ensure the page is full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Main container layout */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full height of the viewport */
+  }
+  
+  .content {
+    flex: 1; /* This ensures content fills available space */
+  }
+  
+  /* Footer style */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  
+  footer i {
+    font-size: 1.25rem;
+  }
+  

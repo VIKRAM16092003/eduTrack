@@ -1,0 +1,55 @@
+.add-course-container {
+    height: 631px; /* or any height */
+    overflow-y: scroll; /* forces scrollbar */
+    border: 1px solid #ccc; /* optional: to visualize the container */
+   
+  }
+  .container
+  {
+    margin:50px auto;
+    width:25%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.65);
+  }
+
+  .createcourse .inputGroup
+  {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+  }
+
+  .createcourse .inputGroup label
+  {
+    margin-top: 10px;
+  }
+  .createcourse .inputGroup input
+  {
+    margin-top: 5px;
+  }
+  
+  .inputGroup button
+  {
+    margin-top: 10px;
+  }
+
+  .adduser
+{
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+
+.btn btn-primary
+{
+    box-shadow: 5cm;
+}
+
+.text1
+{
+    color: blue;
+}
