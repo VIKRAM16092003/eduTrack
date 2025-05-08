@@ -1,7 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const Navigate = useNavigate(); 
+  const handleLogout = () => {
+    localStorage.removeItem("authToken"); // Remove auth token or relevant key
+    // Optionally clear all local storage: localStorage.clear();
+  
+    // Redirect to login or homepage
+    Navigate("/login");
+  };
+  
+  
   return (
     <>
       <div className="container-fluid p-0">
@@ -26,7 +37,7 @@ const NavBar = () => {
           <div className="collapse navbar-collapse px-lg-3" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
               <Link to="/" className="nav-item nav-link active">Home</Link>
-              <Link to="/About" className="nav-item nav-link">About</Link>
+              
               <Link to="/courses" className="nav-item nav-link">Courses</Link>
 
               <div className="nav-item dropdown">
@@ -43,11 +54,13 @@ const NavBar = () => {
                   <Link to="/CourseDetail" className="dropdown-item">Course Detail</Link>
                   <Link to="/Features" className="dropdown-item">Our Features</Link>
                   <Link to="/Team" className="dropdown-item">Instructors</Link>
-                  <Link to="/Testimonial" className="dropdown-item">Testimonial</Link>
+                  <Link to="/Feedback" className="dropdown-item">Feedback</Link>
                 </div>
               </div>
-
+              <Link to="/About" className="nav-item nav-link">About</Link>
               <Link to="/Contact" className="nav-item nav-link">Contact</Link>
+              <button onClick={handleLogout} className="btn btn-primary">Log Out</button>
+
             </div>
           </div>
         </nav>

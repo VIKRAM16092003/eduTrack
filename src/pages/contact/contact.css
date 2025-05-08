@@ -1,0 +1,125 @@
+.contact-container {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .contact-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: blue;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .contact-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.3rem;
+    color: blue;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info p {
+    color: #444;
+    margin: 5px 0 15px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: blue;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-container h1,
+  .contact-container .intro,
+  .contact-info,
+  .contact-form {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .contact-container h1 { animation-delay: 0.2s; }
+  .contact-container .intro { animation-delay: 0.4s; }
+  .contact-info { animation-delay: 0.6s; }
+  .contact-form { animation-delay: 0.8s; }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form,
+    .contact-info {
+      width: 100%;
+    }
+  }
+  

@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css'; // If you're using a separate CSS file for the footer
 
 const Footer = () => {
+  
   return (
     <footer>
       <div className="container-fluid bg-dark">

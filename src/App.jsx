@@ -12,24 +12,32 @@ import Footer from './Components/Footer.jsx';
 import Avcourses from './pages/avcourses/Avcourses.jsx';
 import AddCourse from './pages/addCourse/AddCourse.jsx';
 import AddLesson from './pages/AddLesson/AddLesson.jsx';
+import FeedBack from './pages/Feedback/FeedBack.jsx';
+import { useLocation } from 'react-router-dom';
 const App = () => {
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/signup';
   return (
     <div>
-      <NavBar/>
+       {!hideHeaderFooter && <NavBar />}
+
+
+      
       <div>
       <Routes>
+        <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
         <Route path='/' element={<Home/>}></Route>
         <Route path="/courses/:courseId" element={<Courses/>} />
         <Route path='/Contact' element={<Contact/>}></Route>
         <Route path='/About' element={<About/>}></Route>
         <Route path='/courses' element={<Avcourses/>}></Route>
-        <Route path='/signup' element={<SignUp/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/feedback' element={<FeedBack/>}></Route>
         <Route path='/Addlesson/:courseId' element={<AddLesson/>}></Route>
         <Route path='/addCourse' element={<AddCourse/>}></Route>
       </Routes>
       </div>
-      <Footer/>
+      {!hideHeaderFooter && <Footer />}
     </div>
   )
 }

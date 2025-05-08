@@ -32,6 +32,7 @@ const AddLesson = () => {
          setNotes("");
          
       }
+      
        
     }
   return (

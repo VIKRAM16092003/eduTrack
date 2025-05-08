@@ -81,9 +81,14 @@
   {
     margin-top: 25px;
     align-items: center;
+    
   }
   .create{
     text-align: center;
     
     padding-bottom: 8px;
+  }
+  #card
+  {
+    margin-bottom: 10px;
   }
