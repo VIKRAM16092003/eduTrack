@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";  //react dom contains  Link,Routes,Route,useNavigate,useLocation,useParams.
 import "./Home.css";
 
 function Home() {
@@ -59,13 +59,13 @@ function Home() {
         <h2>Popular Courses</h2>
         <div className="course-preview">
           <div className="course-card">
-            <h3>Full Stack Development</h3>
-            <p>Master frontend and backend using React, Node, and MongoDB.</p>
+            <h3>java Full Stack Development</h3>
+            <p>Master frontend and backend using React, spring boot and MongoDB.</p>
             <Link to="/courses" className="course-link">View Course</Link>
           </div>
           <div className="course-card">
-            <h3>Data Science Bootcamp</h3>
-            <p>Learn Python, Machine Learning, and Data Visualization techniques.</p>
+            <h3>kali linux</h3>
+            <p>os system</p>
             <Link to="/courses" className="course-link">View Course</Link>
           </div>
         </div>

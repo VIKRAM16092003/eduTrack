@@ -47,6 +47,7 @@ const SignUp = () => {
   };
 
   return (
+    <div className="cont">
     <div className="addUser">
       <h3 className="signup-text">Sign Up</h3>
       <form className="addUserForm" onSubmit={handleRegister}>
@@ -70,13 +71,16 @@ const SignUp = () => {
           />
 
           <label htmlFor="role">Role</label>
-          <input
-            type="text"
-            id="role"
-            value={role}
-            onChange={(e) => setRole(e.target.value)}
-            placeholder="Enter your role"
-          />
+          
+<select
+  id="role"
+  value={role}
+  onChange={(e) => setRole(e.target.value)}
+>
+  <option value="">Select a role</option>
+  <option value="user">user</option>
+  <option value="admin">admin</option>
+</select>
           <button type="submit" className="btn btn-success">
             Sign Up
           </button>
@@ -87,10 +91,11 @@ const SignUp = () => {
 
       <div className="login">
         <p>Already have an account?</p>
-        <button type="button" className="btn btn-primary" onClick={() => navigate('/signin')}>
+        <button type="button" className="btn btn-primary" onClick={() => navigate('/login')}>
           Sign In
         </button>
       </div>
+    </div>
     </div>
   );
 };

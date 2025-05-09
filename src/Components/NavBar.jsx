@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const Navigate = useNavigate(); 
@@ -11,8 +11,21 @@ const NavBar = () => {
     // Redirect to login or homepage
     Navigate("/login");
   };
-  
-  
+  const location=useLocation();
+  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/signup';
+
+  if (hideHeaderFooter) {
+    return (<center style={{margin:21}}>
+      <Link to="/" className="navbar-brand ml-lg-3">
+        <h1
+          className="m-0 text-uppercase text-primary"
+          style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700 }}
+        >
+          <i className="fa fa-book-reader mr-3"></i>EduTech
+        </h1>
+      </Link></center>
+    );
+  }
   return (
     <>
       <div className="container-fluid p-0">
